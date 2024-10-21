@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        :root {
+            --color-white-shade: #f9f9f9;
+            --color-black: #333;
+            --color-white: #fff;
+            --color-primary: #007bff;
+            --color-secondary: #6c757d;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--color-white-shade);
+            color: var(--color-black);
+        }
+
+        header {
+            background-color: var(--color-primary);
+            padding: 20px;
+            text-align: center;
+            color: var(--color-white);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .main-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .main-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .main-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--color-secondary);
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .btn {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2rem;
+            transition: 
+                transform 0.25s ease-in,
+                opacity 0.25s ease-in,
+                filter 0.25s ease-in;
+            border-radius: 25px;
+        }
+
+        .btn:hover {
+            transform: scale(1.2);
+        }
+
+        .btns:hover .btn:not(:hover) {
+            transform: scale(0.8);
+            opacity: 0.8;
+            filter: blur(4px);
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test</h1>
+    </header>
+    <section class="main-section">
+        <h2>Explore features</h2>
+        <p>Discover everything we have to offer with just one click on the buttons below.</p>
+
+        <div class="btns">
+            <button class="btn">Learn More</button>
+            <button class="btn">Our Services</button>
+            <button class="btn">Contact</button>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 - All rights reserved.</p>
+    </footer>
+</body>
+</html>
